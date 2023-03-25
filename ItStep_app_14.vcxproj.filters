@@ -1,2 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{9ac378ad-42f7-47a0-890f-c500df34788e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain">
+      <UniqueIdentifier>{01410446-6ea7-44b7-b00e-7b6533f9af84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\Model">
+      <UniqueIdentifier>{a56ce9ae-16d9-4995-ae77-008352028f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\UseCase">
+      <UniqueIdentifier>{9fb15cf0-31ce-4d01-aede-b33cae2b29ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal">
+      <UniqueIdentifier>{ef38d139-8b92-47b6-9fe7-b2a00aa203bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation">
+      <UniqueIdentifier>{0b794171-773b-48c4-bf08-69eed7ba944d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\Screens">
+      <UniqueIdentifier>{ff630bd6-733d-43b3-9f25-a397618abd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\Screens\Home">
+      <UniqueIdentifier>{6aff8636-3139-42d6-9e40-87e7923b144b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Model.cpp">
+      <Filter>Domain\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Provider.cpp">
+      <Filter>Domain\UseCase</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h">
+      <Filter>Domain\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Provider.h">
+      <Filter>Domain\UseCase</Filter>
+    </ClInclude>
+    <ClInclude Include="Library.h">
+      <Filter>Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <Filter>Presentation\Screens\Home</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens.h">
+      <Filter>Presentation\Screens</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
